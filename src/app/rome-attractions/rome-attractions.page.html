@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-back-button slot="start"></ion-back-button>
+    <ion-title>Rome Attractions</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <!-- Use cards to section off each attraction  -->
+  <ion-card>
+    <img src="../assets/img/romeColosseum.jpg">
+    <ion-card-header>
+      Colosseum <br> 41.8903327037551, 12.492506236039048
+    </ion-card-header>
+  </ion-card>
+  <ion-card>
+    <img src="../assets/img/romePantheon.jpg">
+    <ion-card-header>
+      Pantheon <br> 41.898692893615795, 12.476982459435822
+    </ion-card-header>
+  </ion-card>
+  <ion-card>
+    <img src="../assets/img/romeTreviFountain.jpg">
+    <ion-card-header>
+      Trevi Fountain <br> 41.90100452099734, 12.483302150076774
+    </ion-card-header>
+  </ion-card>
+  <ion-card>
+    <div>
+      <!-- Create a button to invoke GPS method -->
+      <h2>GPS</h2>
+      <!-- data binding lat and long -->
+      {{lat}}, {{long}}
+      <ion-button (click)="GPS()">Get Current Position!</ion-button>
+    </div>
+  </ion-card>
+  
+</ion-content>

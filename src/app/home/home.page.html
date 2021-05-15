@@ -1,20 +1,41 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Tourism App
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <!-- Set up radio group to select what country and save value to storage -->
+  <img src="../assets/img/tourismImg.jpg">
+  <ion-list>
+    <ion-radio-group [(ngModel)]="myDetails">
+      <ion-item>
+        <ion-label id="radioTitle">Select where you are from:</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Ireland</ion-label>
+        <ion-radio value="Ireland"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Europe</ion-label>
+        <ion-radio value="Europe"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>USA</ion-label>
+        <ion-radio value="USA" ></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>United Kingdom</ion-label>
+        <ion-radio value="United Kingdom" ></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+    <div>
+      <!-- When button is clicked invoke saveDetails() method and save value-->
+      <ion-button (click)="saveDetails()">Submit</ion-button>
+    </div>
+  </ion-list>
+  
 </ion-content>

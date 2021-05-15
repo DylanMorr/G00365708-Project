@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-back-button slot="start"></ion-back-button>
+    <ion-title>Rome</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <!-- routerLinks to pages and image of flag -->
+  <img src="../assets/img/italyFlag.jpg">
+  <ion-list>
+    <ion-item>Choose an Option Below:</ion-item>
+    <ion-item [routerLink]="['/rome-attractions']" routerDirection="forward">Attractions & GPS</ion-item>
+    <ion-item [routerLink]="['/rome-flights']" routerDirection="forward">Flights</ion-item>
+    <ion-item [routerLink]="['/rome-weather']" routerDirection="forward">Weather</ion-item>
+  </ion-list>
+
+</ion-content>

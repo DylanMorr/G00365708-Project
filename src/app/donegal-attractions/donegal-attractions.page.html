@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-back-button slot="start"></ion-back-button>
+    <ion-title>Donegal Attractions</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <!-- Use cards to section off each attraction  -->
+  <ion-card>
+    <img src="../assets/img/donegalSlieveLeague.jpg">
+    <ion-card-header>
+      Slieve League <br> 54.64012752840421, -8.6822174019582
+    </ion-card-header>
+  </ion-card>
+  <ion-card>
+    <img src="../assets/img/donegalAileach.jpg">
+    <ion-card-header>
+      Aileach <br> 55.02374961705026, -7.4275040237191226
+    </ion-card-header>
+  </ion-card>
+  <ion-card>
+    <img src="../assets/img/donegalErrigal.jpg">
+    <ion-card-header>
+      Errigal <br> 55.034150974359065, -8.113309908041897
+    </ion-card-header>
+  </ion-card>
+  <ion-card>
+    <div>
+      <!-- Create a button to invoke GPS method -->
+      <h2>GPS</h2>
+      <!-- data binding lat and long -->
+      {{lat}}, {{long}}
+      <ion-button (click)="GPS()">Get Current Position!</ion-button>
+    </div>
+  </ion-card>
+
+</ion-content>

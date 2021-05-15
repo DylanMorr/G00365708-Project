@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-back-button slot="start"></ion-back-button>
+    <ion-title>Paris Attractions</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <!-- Use cards to section off each attraction  -->
+  <ion-card>
+    <img src="../assets/img/parisEiffelTower.jpg">
+    <ion-card-header>
+      Eiffel Tower <br> 48.85854482192162, 2.2943591968513655
+    </ion-card-header>
+  </ion-card>
+  <ion-card>
+    <img src="../assets/img/parisArcDeTriomphe.jpg">
+    <ion-card-header>
+      Arc De Triomphe <br> 48.87396103665027, 2.295521024650969
+    </ion-card-header>
+  </ion-card>
+  <ion-card>
+    <img src="../assets/img/parisNotreDame.jpg">
+    <ion-card-header>
+      Notre Dame <br> 48.85300302397775, 2.350121627447209
+    </ion-card-header>
+  </ion-card>
+  <ion-card>
+    <div>
+      <!-- Create a button to invoke GPS method -->
+      <h2>GPS</h2>
+      <!-- data binding lat and long -->
+      {{lat}}, {{long}}
+      <ion-button (click)="GPS()">Get Current Position!</ion-button>
+    </div>
+  </ion-card>
+  
+</ion-content>

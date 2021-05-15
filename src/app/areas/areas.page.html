@@ -1,0 +1,18 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-back-button slot="start"></ion-back-button>
+    <ion-title>
+      Areas
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <!-- Set routerLinks to go to new pages -->
+  <div id="div1" [routerLink]="['/donegal']" routerDirection="forward">Donegal</div>
+  <div id="div2" [routerLink]="['/paris']" routerDirection="forward">Paris</div>
+  <div id="div3" [routerLink]="['/athens']" routerDirection="forward">Athens</div>
+  <div id="div4" [routerLink]="['/rome']" >Rome</div>
+  
+</ion-content>

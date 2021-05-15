@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-back-button slot="start"></ion-back-button>
+    <ion-title>Athens Attractions</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <!-- Use cards to section off each attraction  -->
+  <ion-card>
+    <img src="../assets/img/athensParthenon.jpg">
+    <ion-card-header>
+      Parthenon <br> 37.9717088869327, 23.727186192541232
+    </ion-card-header>
+  </ion-card>
+  <ion-card>
+    <img src="../assets/img/athensAcropolis.jpg">
+    <ion-card-header>
+      Acropolis <br> 37.97180188101419, 23.72614549545451
+    </ion-card-header>
+  </ion-card>
+  <ion-card>
+    <img src="../assets/img/athensTempleOfHephaestus.jpg">
+    <ion-card-header>
+      Temple Of Hephaestus <br> 37.97579795346518, 23.72190270905324
+    </ion-card-header>
+  </ion-card>
+  <ion-card>
+    <div>
+      <!-- Create a button to invoke GPS method -->
+      <h2>GPS</h2>
+      <!-- data binding lat and long -->
+      {{lat}}, {{long}}
+      <ion-button (click)="GPS()">Get Current Position!</ion-button>
+    </div>
+  </ion-card>
+  
+</ion-content>

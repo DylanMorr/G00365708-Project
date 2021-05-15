@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-back-button slot="start"></ion-back-button>
+    <ion-title>Paris Weather</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-label>Current Conditions:</ion-label>
+
+  <!-- Read in Api and display using weather -->
+  <ul *ngFor="let weather of weather">
+    <li>Temperature = {{weather.temperature}}</li>
+    <li>Description = {{weather.description}}</li>
+    <li>Wind Speed = {{weather.wind_speed}}</li>
+    <li>Wind Direction = {{weather.wind_dir}}</li>
+    <li>Precipitation = {{weather.precip}}</li>
+    <li>Pressure = {{weather.pressure}}</li>
+  </ul>
+  
+</ion-content>

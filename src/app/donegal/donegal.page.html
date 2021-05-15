@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-back-button slot="start"></ion-back-button>
+    <ion-title>Donegal</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <!-- routerLinks to pages and image of flag -->
+  <img src="../assets/img/irelandFlag.jpg">
+  <ion-list>
+    <ion-item>Choose an Option Below:</ion-item>
+    <ion-item [routerLink]="['/donegal-attractions']" routerDirection="forward">Attractions & GPS</ion-item>
+    <ion-item [routerLink]="['/donegal-flights']" routerDirection="forward">Flights</ion-item>
+    <ion-item [routerLink]="['/donegal-weather']" routerDirection="forward">Weather</ion-item>
+  </ion-list>
+
+</ion-content>
